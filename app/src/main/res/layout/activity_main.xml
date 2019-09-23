@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/calc_wallpaper">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome To Calculust!"
+        android:textSize="30dp"
+        android:background="#ffffff"
+        android:textColor="#000000"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.061" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="#ffffff"
+        android:text="Select the operation to perform:"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.161" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="317dp"
+        android:layout_height="339dp"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Function value"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="236dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Even Function Check"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="188dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Odd Function Check"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="212dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Limit Calculator"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="236dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continuity Check"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="236dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Differentiation Value of Function"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="236dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Differentiability Check of Function"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="236dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Definite Integrals"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="236dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton9"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:text="MORE OPERATIONS! :)"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            tools:layout_editor_absoluteX="48dp"
+            tools:layout_editor_absoluteY="236dp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonCalc"
+        android:layout_width="312dp"
+        android:layout_height="50dp"
+        android:background="#3349ff"
+        android:text="LET'S CALCULUST IT!"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.845" />
+
+</android.support.constraint.ConstraintLayout>
